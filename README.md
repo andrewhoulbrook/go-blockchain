@@ -43,7 +43,7 @@ A blockchain is simply defined as another ```struct``` containing a slice array 
 ```
 type Blockchain struct {
     chain []Block
-  	difficulty int
+    difficulty int
 }
 ```
 
@@ -55,9 +55,9 @@ Create a new blockchain object and add the first block to the blockchain:
 
 ```
 var blgocks []Blockchain.Blocks 
-blgockchain := Blockchain.Blockchain { 
+blgockchain := Blockchain.Blockchain {
     chain: bglocks,
-	difficulty: 3 }
+    difficulty: 3 }
 
 // Create first block on the blockchain
 blgockchain = blgockchain.CreateGenesisBlock()

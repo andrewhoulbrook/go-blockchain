@@ -36,12 +36,11 @@ func main () {
 		} else {
 			// Create and add new block to the blockchain
 			blgockchain = blgockchain.CreateBlock(transactionData)
-			
+
 			// Display current transactions on the blockchain and verify it's integrity
 			fmt.Printf("\nTransaction successfully added to the blockchain:\n")
 			blgockchain.ShowChain()
 			fmt.Printf("\nBlockchain integrity check successful: %t\n", blgockchain.VerifyIntegrity())
-
 		}
 	}
 }

@@ -59,7 +59,7 @@ func (bc Blockchain) CreateGenesisBlock() Blockchain {
 	gb := Block{
 		index: 0,
 		timestamp: time.Now().UnixNano(),
-	    data: "Welcome to the Blgockchain!",
+		data: "Welcome to the Blgockchain!",
 		precedingHash: "0",
 		}
 	return bc.AddBlock(gb)
