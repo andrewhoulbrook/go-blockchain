@@ -93,7 +93,7 @@ func (bc Blockchain) AddBlock(b Block) Blockchain {
 	return bc
 }
 
-// Function to generate a 6-bit random number
+// Function to generate a 6-digit random number
 func createNonce() int64 {
 	rnd, _ := rand.Int(rand.Reader, big.NewInt(999999 - 100000))
 	return rnd.Int64() + 100000
